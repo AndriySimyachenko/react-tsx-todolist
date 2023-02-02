@@ -1,0 +1,11 @@
+/* eslint-disable react/prop-types */
+import React from "react";
+
+export const InputField = ({ text, handleInput, handleSubmit }) => {
+  return (
+    <label>
+      <input value={text} onChange={(e) => handleInput(e.target.value)} />
+      <button onClick={handleSubmit}>Add todo</button>
+    </label>
+  );
+};
